@@ -19,4 +19,11 @@ AFRAME.registerComponent('next-button', {
       }
       nextButton.onclick = nextAnimation  // Switch to the next animation when the button is pressed.
     },
-  })
+})
+
+AFRAME.registerComponent('tap-recenter', {
+    init() {
+        const scene = this.el.sceneEl
+        scene.addEventListener('click', () => { scene.emit('recenter', {}) })
+    },
+})
