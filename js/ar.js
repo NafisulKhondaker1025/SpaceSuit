@@ -5,8 +5,6 @@ AFRAME.registerComponent('next-button', {
       const nextButton = document.getElementById('nextbutton')
 
       nextButton.style.display = 'block'
-
-      let idx = 1  // Start with the 2nd animation because the model starts with idle animation
       const nextAnimation = () => {
         if (standModel.getAttribute('visible') == true) {
             standModel.setAttribute('visisble', 'false')
