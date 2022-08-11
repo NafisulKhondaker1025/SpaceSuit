@@ -7,12 +7,12 @@ AFRAME.registerComponent('next-button', {
       nextButton.style.display = 'block'
       const nextAnimation = () => {
         if (standModel.getAttribute('visible') == true) {
-            standModel.setAttribute('visisble', 'false')
+            standModel.setAttribute('visible', 'false')
             animateModel.setAttribute('visible', 'true')
             nextButton.innerHTML = 'Stand'
         }
         else {
-            standModel.setAttribute('visisble', 'true')
+            standModel.setAttribute('visible', 'true')
             animateModel.setAttribute('visible', 'false')
             nextButton.innerHTML = 'Dance'
         }
